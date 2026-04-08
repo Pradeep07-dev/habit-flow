@@ -1,11 +1,11 @@
 # Build a Habit Tracker App with React Native & Appwrite
 
 <div align="center">
-  <br />
+  <!-- <br />
   <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
     <img src="https://github.com/user-attachments/assets/297ea017-d084-48a1-a064-513d1b6b3d0c" alt="Habit Tracker App Banner">
   </a>
-  <br />
+  <br /> -->
   <div>
     <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
     <img src="https://img.shields.io/badge/-Expo-000000?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
@@ -14,10 +14,7 @@
     <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
   </div>
   <h3 align="center">Build a Habit Tracker App with React Native, Appwrite, and TailwindCSS</h3>
-  <div align="center">
-    Follow the full video tutorial on 
-    <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank"><b>YouTube</b></a>
-  </div>
+
   <br />
 </div>
 
@@ -34,9 +31,7 @@
 
 ## 🚀 Introduction
 
-In this tutorial, you'll learn how to build a modern **Habit Tracker** app using **React Native**, **Appwrite**, **Expo**, and **TailwindCSS**. This app allows users to track their daily habits, view streaks, and manage habit completions with a sleek UI.
-
-🎥 Watch the full tutorial: [YouTube](https://youtu.be/YOUR_VIDEO_ID)
+I have built a modern **Habit Tracker** app using **React Native**, **Appwrite**, **Expo** and **TailwindCSS**. This app allows users to track their daily habits, view streaks and manage habit completions with a sleek UI.
 
 ---
 
@@ -69,7 +64,7 @@ In this tutorial, you'll learn how to build a modern **Habit Tracker** app using
   Use Expo's built-in features to create a mobile-first, responsive design.
 
 - 🚀 **User Authentication**
-  Users can sign up, sign in, and manage their authentication state with Appwrite.
+  Users can sign up, sign in and manage their authentication state with Appwrite.
 
 ---
 
@@ -90,7 +85,7 @@ npm install
 npm start
 ```
 
-Your app will be available at: [http://localhost:19002](http://localhost:19002) (for Expo development)
+Your app will be available at: [http://localhost:8081](http://localhost:8081) (for Expo development)
 
 ---
 
