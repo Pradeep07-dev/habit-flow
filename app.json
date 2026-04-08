@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "habit-tracker",
-    "slug": "habit-tracker",
+    "name": "HabitFlow",
+    "slug": "habitflow",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "habittracker",
+    "icon": "./assets/images/icon1.png",
+    "scheme": "habitflow",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -23,7 +23,8 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon1.png",
+      "title": "HabitFlow"
     },
     "plugins": [
       "expo-router",

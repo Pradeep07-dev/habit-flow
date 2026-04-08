@@ -1,11 +1,6 @@
 # Build a Habit Tracker App with React Native & Appwrite
 
 <div align="center">
-  <!-- <br />
-  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
-    <img src="https://github.com/user-attachments/assets/297ea017-d084-48a1-a064-513d1b6b3d0c" alt="Habit Tracker App Banner">
-  </a>
-  <br /> -->
   <div>
     <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
     <img src="https://img.shields.io/badge/-Expo-000000?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
