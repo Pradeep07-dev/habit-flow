@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { PaperProvider } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import Toast from "react-native-toast-message";
 
 function RouteGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -41,6 +42,7 @@ export default function RootLayout() {
           </SafeAreaProvider>
         </PaperProvider>
       </AuthProvider>
+      <Toast />
     </GestureHandlerRootView>
   );
 }

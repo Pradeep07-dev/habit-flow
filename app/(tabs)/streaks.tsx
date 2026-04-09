@@ -269,6 +269,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 18,
     marginBottom: 2,
+    color: "#22223b",
   },
   habitDescription: {
     color: "#6c6c80",

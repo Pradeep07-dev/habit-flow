@@ -5,6 +5,7 @@ import { Stack, useRouter } from "expo-router";
 import { useState } from "react";
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from "react-native";
 import { Button, Text, TextInput, useTheme } from "react-native-paper";
+import Toast from "react-native-toast-message";
 
 export default function AuthScreen() {
   const [isSignUp, setIsSignUp] = useState<boolean>(false);
@@ -22,8 +23,8 @@ export default function AuthScreen() {
       setError("Please fill in all fields.");
       return;
     }
-    if (password.length < 6) {
-      setError("Password must be at least 6 characters.");
+    if (password.length < 8) {
+      setError("Password must be at least 8 characters.");
       return;
     }
 
@@ -35,6 +36,7 @@ export default function AuthScreen() {
         setError(error);
         return;
       }
+      Toast.show({ type: "success", text1: "Account created!" });
     } else {
       const error = await signIn(email, password);
       if (error) {

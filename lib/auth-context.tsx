@@ -37,20 +37,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const signUp = async (email: string, password: string) => {
     try {
       await account.create(ID.unique(), email, password);
-      await signIn(email, password);
-      return null;
     } catch (error) {
       if (error instanceof Error) {
         if (error.message?.includes("already exists"))
           return "Account already exists";
-
-        if (error.message?.includes("Invalid credentials"))
-          return "Invalid email or password";
       }
-
-      return "An error occured during signup";
+      return "An error occurred during signup";
     }
+
+    const signInError = await signIn(email, password);
+    if (signInError) return signInError;
+
+    return null;
   };
+
   const signIn = async (email: string, password: string) => {
     try {
       await account.createEmailPasswordSession(email, password);
@@ -58,7 +58,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(session);
       return null;
     } catch (error) {
+      console.log("SIGN IN ERROR:", JSON.stringify(error));
       if (error instanceof Error) {
+        console.log("ERROR MESSAGE:", error.message);
         return "Invalid credentials";
       }
 
